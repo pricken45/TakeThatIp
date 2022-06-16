@@ -41,6 +41,7 @@ app.get('/ip', (req, res) => {
 
 app.get('/info', (req, res) => {
     latestIP = req.clientIp;
+    console.log("New IP address recieved: " + latestIP);
 })
 
 server.listen(3000);
